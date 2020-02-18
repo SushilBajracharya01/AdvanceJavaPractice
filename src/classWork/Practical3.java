@@ -40,9 +40,10 @@ class Employee {
 		return this.salary * 12;
 	}
 	
-	public float raiseSalary(int increasedAmount) {
-		this.salary = this.salary + increasedAmount;
-		return this.salary;
+	public int raiseSalary(int percent) {
+		int amount = percent/100 * salary;
+		this.salary = salary + amount;
+		return salary;
 	}
 
 	public int getId() {
