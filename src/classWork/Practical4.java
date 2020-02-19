@@ -31,7 +31,7 @@ class Account {
 	
 	int credit(int amount) {
 		this.balance = this.balance + amount;
-		return this.balance;
+		return balance;
 	}
 	
 	int debit(int amount) {
@@ -69,6 +69,7 @@ class Account {
 public class Practical4 {
 	public static void main(String[] args) {
 		Account acc1 = new Account("C1", "Ram", 2000);
-		acc1.toString();
+		System.out.println(acc1.toString());
+		
 	}
 }
